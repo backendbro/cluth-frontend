@@ -18,6 +18,10 @@
   font-family: 'Jost', "Roboto",sans-serif;
 }
 
+html {
+    padding:0;
+    margin:0;
+}
 @media only screen and (max-width: 600px) {
 
 body {
@@ -29,7 +33,7 @@ body {
 
     nav ul .right-section {
         
-        margin-left: 190px;
+        margin-left: 160px;
         margin-top: -60px;
     }
 
@@ -88,10 +92,29 @@ body {
 }
 
 
-@media only screen and (max-width: 480px) {
-   html{
-    background-color: blue;
-   }
+@media only screen and (max-width: 414px) {
+
+
+    nav {
+        overflow-x: hidden;
+    }
+
+        nav ul .right-section {
+            margin-left: 80px;
+            margin-top: -60px;
+        }
+    
+       
+        .third-section .top-section {
+            border: var(--debugger);
+            margin-left: -25px;
+        }
+        
+
+        .third-section .top-section .card {
+            margin-bottom: 25px;
+        }
+    
 }
 
 
