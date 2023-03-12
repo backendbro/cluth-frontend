@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&family=Solitreo&display=swap');
+
+
+:root {
+    --color-blue-1:#3554D1;
+    --color-dark-1: #051036;
+    --color-dark-2:#212529;
+    --color-light-1:#697488; 
+    --color-light-2: #F5F5F5;
+    --color-light-3: #52575f;
+    --color-light-4:#a7afbe;
+    --color-border: #DDDDDD;
+    --field-padding: 12px;
+    --debugger: 1px solid red;
+}
+
+*{
+  font-family: 'Jost', "Roboto",sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+
+body {
+    overflow-x: hidden;
+}
+    .left {
+        visibility: hidden;
+    }
+
+    nav ul .right-section {
+        
+        margin-left: 190px;
+        margin-top: -60px;
+    }
+
+    nav ul .left-section {
+        margin-top: 20px;
+    }
+    
+    
+    section ul {
+        position: absolute;
+        top: 80px;
+        width: 96%;
+        right: 200px;
+        
+    }
+    
+    section ul li {
+        width: 100%;
+        
+    }
+    .second-section {
+        position: relative;
+    }
+    .second-section .left-section {
+        
+        position: absolute;
+        left: 25px;
+    } 
+    
+    .second-section .right-section {
+        
+        position: absolute;
+        top: 175px;
+        left: 25px;
+    } 
+    
+
+      .third-section {
+        margin-top: 200px;
+       position: relative;
+      }
+
+      .third-section .top-section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 25px;
+      }
+
+      .third-section .top-section .card{
+       margin-bottom: 20px;
+      }
+  
+}
+
+
+nav {
+    padding-left: 20px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    margin: 0px auto;
+}
+
+nav ul .left-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav ul .left-section li img {
+    height: 28px;
+    width: 122px;
+    vertical-align: middle;
+}
+
+nav ul .left-section li a {
+    text-decoration: none !important;
+    color: rgb(0, 13, 29);
+}
+
+nav ul .left-section li i {
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+
+nav ul .left-section li {
+    width: auto;
+    padding: 0px;
+    margin-right: 26px;
+    font-size: 17px;
+    color: rgb(0, 13, 29);
+    cursor: pointer;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+
+
+nav ul .right-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}
+
+nav ul .right-section li  i {
+   position: absolute;
+   top: 6px;
+   left: 8px;
+   font-size: 19px;
+}
+
+nav ul .right-section .circle {
+   background-color: white;
+    font-size: 19px;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding-top: 3px;
+     padding-left: 6px;
+     padding-right: 2px;
+ }
+
+
+ nav ul .right-section  .usd {
+    background-color: white;
+     font-size: 19px;
+     border: 1px solid black;
+     border-radius: 50%;
+    padding-top: 3px;
+     padding-left: 6px;
+     padding-right: 2px;
+  }
+
+
+nav ul .right-section li  {
+    border: 1px solid transparent;
+    height: 36px;
+    display: flex;
+    position: relative;
+    min-width: 36px;
+    background: rgba(115, 126, 141, 0.08);
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+
+nav ul .right-section li button  {
+   padding: 5px 30px;
+   background: rgb(1, 188, 141);
+   color: white;
+   border: none;
+}
+
+.first-section {
+    background: rgba(125, 135, 146, 0.08);
+    height: 70px;
+}
+
+.first-section ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 180px;
+}
+
+.first-section ul li {
+    color: rgb(36, 174, 143);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: .1px;
+    margin-left: 30px;
+}
+
+.first-section ul li:hover a{
+    color: rgb(36, 174, 143);
+}
+
+
+.first-section ul li a{
+    color: rgba(0, 20, 42, 0.6);
+    text-decoration: none;
+}
+
+.first-section ul .active a {
+    color: rgb(36, 174, 143);
+    text-decoration: underline;
+}
+
+.first-section ul li a span {
+    display: flex;
+    justify-content: center;
+}
+
+.second-section {
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.second-section .right-section .active {
+    display: inline-block;
+    text-decoration: none;
+    height: 40px;
+    font-size: 16px;
+    padding: 8px 14px;
+    color: white;
+    background: rgb(1, 188, 141);
+    border-radius: 4px;
+}
+
+.second-section .left-section  {
+   display: flex;
+   flex-direction: column;
+}
+
+.second-section .left-section .bottom-section {
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.second-section .left-section .bottom-section > img, p, select {
+   margin-right: 10px;
+}
+
+.second-section .left-section .bottom-section > img, select {
+    margin-top: -15px;
+ }
+
+.second-section .left-section .bottom-section select {
+    width: 80px;
+    background: rgba(0, 13, 29, 0.04);
+    border-radius: 16px;
+    padding: 4px 12px;
+}
+
+.second-section .left-section .asset {
+    font-weight: 600;
+    font-size: 34px;
+    color: rgb(0, 13, 29);
+}
+
+.second-section .left-section .top-section {
+   display: flex;
+    margin-bottom: 20px;
+   vertical-align: middle;
+}
+
+.second-section .left-section .top-section i {
+   margin-top: 20px;
+   margin-left: 7px;
+   cursor: pointer;
+ }
+
+.second-section .right-section a {
+    display: inline-block;
+    text-decoration: none;
+    height: 40px;
+    font-size: 16px;
+    padding: 8px 14px;
+    color: rgb(1, 188, 141);
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 13, 29, 0.12);
+    margin-right: 10px;
+}
+
+.second-section .right-section a:hover {
+    
+}
+

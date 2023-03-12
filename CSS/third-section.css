@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&family=Solitreo&display=swap');
+
+
+:root {
+    --color-blue-1:#3554D1;
+    --color-dark-1: #051036;
+    --color-dark-2:#212529;
+    --color-light-1:#697488; 
+    --color-light-2: #F5F5F5;
+    --color-light-3: #52575f;
+    --color-light-4:#a7afbe;
+    --color-border: #DDDDDD;
+    --field-padding: 12px;
+    --debugger: 1px solid red;
+}
+
+*{
+  font-family: 'Jost', "Roboto",sans-serif;
+}
+
+.third-section {
+    display: flex;
+    padding-left: 200px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.third-section .top-section {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.third-section .top-section .card {
+   margin-right: 30px;
+   height: 14rem;
+}
+
+.third-section .top-section .card::after {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    height: 6px;
+    background: linear-gradient(to right, rgb(156, 212, 249), rgb(99, 169, 240));
+    content: "";
+}
+
+.third-section .bottom-section{
+    display: flex;
+}
+
+.third-section .bottom-section .card {
+    margin-right: 30px;
+ }
+
+ .third-section .top-section .card .card-title {
+    padding: 10px;
+ }
+
+ .third-section .top-section .card  .card-subtitle {
+    padding-left: 10px; 
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+ }
+
+
+ .third-section .top-section .card .card-text {
+    padding-left: 12px; 
+    margin-bottom: 40px;
+ }
+
+ .third-section .top-section .card  .card-link {
+    padding-left: 10px; 
+}
+
+
+.third-section .top-section .card  a {
+   text-decoration: none;
+   color: rgb(1, 188, 141);
+   padding: 8px 14px;
+   background: transparent;
+   border-radius: 4px;
+   border: 1px solid rgba(0, 0, 0, 0.12);
+   
+}
+
