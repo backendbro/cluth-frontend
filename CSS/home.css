@@ -88,6 +88,12 @@ body {
 }
 
 
+@media only screen and (max-width: 900px) {
+    body{
+        border: var(--debugger);
+    }
+}
+
 nav {
     padding-left: 20px;
 }
