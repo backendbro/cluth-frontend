@@ -35,6 +35,7 @@
 .third-section .top-section .card {
    margin-right: 30px;
    height: 14rem;
+   width: 24rem;
 }
 
 .third-section .top-section .card::after {
