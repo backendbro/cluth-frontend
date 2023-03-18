@@ -42,4 +42,27 @@ eyeOpen.addEventListener('click', function(e) {
 
 })
 
+const sideBar =  document.getElementById("sidebarMenu")
+const toggleBtn = document.querySelector(".sidebarIconToggle")
+toggleBtn.addEventListener("click", function(e) {
+   
 
+    if(toggleBtn.classList[1] == ("active")){
+        toggleBtn.classList.remove("active")
+        
+        sideBar.style.transform = `translateX(250px);`
+        sideBar.style.transform =`250ms ease-in-out;`
+        
+        setTimeout(function() {
+            sideBar.style.display = "none"
+        }, 500)
+    
+    }else {
+        toggleBtn.classList.add("active")
+        sideBar.style.transform = `translateX(250px);`
+        sideBar.style.transform =`250ms ease-in-out;`
+        sideBar.style.display = "block"
+    }
+    
+    console.log(toggleBtn.classList)
+})
