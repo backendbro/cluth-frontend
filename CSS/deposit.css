@@ -14,10 +14,12 @@
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
 
+    html {
+        overflow: hidden;
+    }
     body {
-        /* overflow-x: hidden; */
     }
 
     .fourth-section {
@@ -78,8 +80,9 @@
     }
 
     .fifth-section .header  {
-        overflow-x: auto;
+        overflow: auto;
     }
+
 /* 
     .fifth-section table {
         width: 100px
@@ -387,6 +390,7 @@ body {
 
 .fifth-section table {
     width: 100%;
+    overflow: auto;
 }
 
 .fifth-section table tr th {
