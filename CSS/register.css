@@ -48,6 +48,38 @@
 
 }
 
+@media only screen and (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+  
+ .container-fluid  {
+    border: 1px solid blue;
+    position: relative;
+}
+
+.container-fluid .right-section .top-section {
+  position: absolute;
+  right: -20px;
+}
+
+.container-fluid .right-section .bottom-section {
+  border: 1px solid green;
+  margin-top: 140px;
+  width: 100%;
+}
+
+.container-fluid .right-section .bottom-section .form-control {
+  width: 70%;
+  border: 1px solid black;
+}
+ 
+.btn-div button {
+  width: 70%;
+  border: 1px solid red;
+}
+ }
+
 .html, body {
   height:100%;
   line-height: 1.875;

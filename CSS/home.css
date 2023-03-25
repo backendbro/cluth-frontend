@@ -119,13 +119,17 @@ body {
 
 
 @media only screen and (max-width: 480px) {
-    body {
+    
+    html {
+        overflow-x: hidden;
         border: 1px solid blue;
-        overflow: hidden;
+        }
+
+    body {
        width: 100%;
-       display: flex;
-       justify-content: center;
-       align-items: center;
+       border: var(--debugger);
+      padding-left: -20px;
+      padding-right: -80px;
     }
 
     .first-middle-section .sidebarIconToggle {
@@ -143,12 +147,7 @@ body {
         background: rgb(1, 188, 141);
     }
 
-    nav {
-        overflow: hidden;
-    }
-
     .third-section {
-        /* overflow: hidden; */
         max-width: 330px;
         height: 600px;
         margin-bottom: 300px;
@@ -158,17 +157,26 @@ body {
             margin-left: 80px;
             margin-top: -60px;
         }
+
+        .second-section {
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
         
         .second-section .left-section {
-            margin-left: -20px;
-        }
-
-        .second-section .right-section {
-            margin-left: -40px;
+            margin-left: -10px;
         }
         
+        
+        .second-section .right-section {
+            margin-left: -30px;
+        }
+        
+       
+
         .third-section .top-section {
-            margin-left: -40px;
+            margin-left: -30px;
             width: 90%;
             overflow-x: hidden;
         }
